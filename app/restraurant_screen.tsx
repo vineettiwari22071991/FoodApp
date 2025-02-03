@@ -4,6 +4,7 @@ import { icons } from "@/constants"
 import { useRestaurantStore } from "@/store"
 import { themeColors } from "@/theme"
 import { router } from "expo-router"
+import { StatusBar } from "expo-status-bar"
 import { ScrollView, Text, View, Image, TouchableOpacity } from "react-native"
 import * as Icon from 'react-native-feather'
 const RestraurantDetailsScreen = () => {
@@ -13,17 +14,21 @@ const RestraurantDetailsScreen = () => {
         <View
             className="flex-1"
         >
+            <StatusBar style="light" />
             <View className="relative">
                 <Image
                     source={restaurant?.image}
                     className="w-full h-72"
                 />
                 <TouchableOpacity className="rounded-full top-14 bg-gray-50 absolute mx-5"
+                    style={{
+                        backgroundColor:themeColors.bgColor(1)
+                    }}
                     onPress={() => {
                         router.back()
                     }}
                 >
-                    <Icon.ArrowLeft strokeWidth={1} stroke={themeColors.bgColor(1)} width={30} height={30} />
+                    <Icon.ArrowLeft strokeWidth={1} stroke="white" width={30} height={30} />
                 </TouchableOpacity>
             </View>
             <View

@@ -10,7 +10,9 @@ import location from '../assets/images/location.png'
 import burger_image from '../assets/images/burger_image.jpeg';
 import samosa_image from '../assets/images/samosa_image.jpeg'
 import chicken_image from '../assets/images/chicken_image.jpeg'
-
+import delivery_guy from '../assets/images/delivery_guy.png'
+import delivery_food from '../assets/images/delivery_food.gif'
+import delivery_boy from '../assets/images/delivery_boy.png';
 export const images = {
     chickenImage: chicken,
     res_1,
@@ -20,13 +22,19 @@ export const images = {
     res_5,
     burger_image,
     samosa_image,
-    chicken_image
+    chicken_image,
+    delivery_guy
+}
+
+export const gifImages = {
+    delivery_food
 }
 
 export const icons = {
     pizzaIcons: pizaa,
     start,
-    location
+    location,
+    delivery_boy
 }
 export const featuredListValue = [
    {

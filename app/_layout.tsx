@@ -34,6 +34,9 @@ export default function RootLayout() {
       <Stack>
         <Stack.Screen name="index" options={{ headerShown: false }} />
         <Stack.Screen name="restraurant_screen" options={{ headerShown: false }} />
+        <Stack.Screen name="cart_screen" options={{headerShown: false, presentation: "modal"}}/>
+        <Stack.Screen name="food_preparing" options={{headerShown: false, presentation: "modal"}}/>
+        <Stack.Screen name="order_delivered" options={{headerShown: false, presentation: "modal"}}/>
         <Stack.Screen name="+not-found" />
       </Stack>
     
