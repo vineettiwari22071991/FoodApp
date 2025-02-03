@@ -14,7 +14,7 @@ const RestraurantDetailsScreen = () => {
         <View
             className="flex-1"
         >
-            <StatusBar style="light" />
+            <StatusBar style="dark" />
             <View className="relative">
                 <Image
                     source={restaurant?.image}
